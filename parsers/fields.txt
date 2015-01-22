@@ -1,0 +1,158 @@
+<<< Octopart >>>
+resistor
+capacitor
+inductor
+resistor arrays
+leds
+diodes
+transistors
+connectors
+switches / buttons
+voltage regulators
+fuses
+battery management ic's
+motor drivers
+op-amps
+real time clocks
+timers
+memory
+microcontrollers
+crystal oscillators
+interface ic's
+sensors
+platforms
+
+<<< Seeed studio >>>
+switch
+sensor
+resistor
+relay
+module
+microphone
+inductor
+ic
+fuse
+display
+diode
+connector
+capacitor
+buzzer
+battery
+antenna
+transistor
+crystal oscillator
+
+<<< FabLab >>>
+resistor
+potentiometer
+capacitor
+choke
+diode
+transistor
+h-bridge motor driver
+regulator
+amplifier
+leds
+photodetector
+lcd
+speaker/microphone
+temperature
+hall effect
+accelerometer
+op-amp
+microcontroller
+crystal
+radios
+buttons and switches
+magnets
+headers
+jacks/plugs
+ribbon cable connectors
+screw terminals
+test clips
+antistatic bags
+antistatic packaging
+heat shrink tubing
+soldering
+battery connectors
+
+
+==========================================================================================================
+
+<<< Octopart >>>
+resistor
+capacitor
+inductor
+resistor arrays
+leds
+diodes
+transistors
+connectors
+switches / buttons
+voltage regulators
+fuses
+battery management ic's
+motor drivers
+op-amps
+real time clocks
+timers
+memory
+microcontrollers
+crystal oscillators
+interface ic's
+sensors
+platforms
+
+<<< Seeed studio >>>
+switch
+sensor
+resistor
+relay
+module
+microphone
+inductor
+ic
+fuse
+display
+diode
+connector
+capacitor
+buzzer
+battery
+antenna
+transistor
+crystal oscillator
+
+<<< FabLab >>>
+resistor
+potentiometer
+capacitor
+choke
+diode
+transistor
+h-bridge motor driver
+regulator
+amplifier
+leds
+photodetector
+lcd
+speaker/microphone
+temperature
+hall effect
+accelerometer
+op-amp
+microcontroller
+crystal
+radios
+buttons and switches
+magnets
+headers
+jacks/plugs
+ribbon cable connectors
+screw terminals
+test clips
+antistatic bags
+antistatic packaging
+heat shrink tubing
+soldering
+battery connectors

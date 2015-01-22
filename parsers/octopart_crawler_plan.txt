@@ -1,0 +1,27 @@
+general idea:
+build a crawler that is fed parts list and a url and it outputs pages within the same url 
+ranked according to the frequency of parts mentioned
+
+
+
+toDo:
+1. parse the octopart CPL page
+
+
+Octopart collaboration plan:
+- a mentor with one weekly skype session and continuous github support on the code
+- 2 months of volunteer work, after which we re-evaluate the further collaboration
+- the goal:
+	to write several site-specific crawlers
+		- dangerous prototypes
+		- github => eagle / KiCad
+	write one generic crawler which indexes pages according the parts list mentions
+	
+
+
+Notes for Sam:
+- Incorrect listing of Molex - 480-37-1000 in the 'USB A Female connector' field
+- Very strange price for microSD card connector https://octopart.com/st9s008v4ar1500-jae%2Belectronics-19043725
+
+
+function definition prototypes

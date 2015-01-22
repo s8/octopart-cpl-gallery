@@ -1,0 +1,1004 @@
+// s8 (master #) Unit_01 $ curl -G https://octopart.com/api/v3/parts/match \
+// >    -d queries="[{\"mpn\":\"SN74S74N\"}]" \
+// >    -d apikey=EXAMPLE_KEY \
+// >    -d pretty_print=true
+{
+    "__class__": "PartsMatchResponse",
+    "msec": 66,
+    "request": {
+        "__class__": "PartsMatchRequest",
+        "exact_only": false,
+        "queries": [
+            {
+                "__class__": "PartsMatchQuery",
+                "brand": null,
+                "limit": 3,
+                "mpn": "SN74S74N",
+                "mpn_or_sku": null,
+                "q": "",
+                "reference": null,
+                "seller": null,
+                "sku": null,
+                "start": 0
+            }
+        ]
+    },
+    "results": [
+        {
+            "__class__": "PartsMatchResult",
+            "error": null,
+            "hits": 6,
+            "items": [
+                {
+                    "__class__": "Part",
+                    "brand": {
+                        "__class__": "Brand",
+                        "homepage_url": "http://ti.com",
+                        "name": "Texas Instruments",
+                        "uid": "2239e3330e2df5fe"
+                    },
+                    "manufacturer": {
+                        "__class__": "Manufacturer",
+                        "homepage_url": "http://ti.com",
+                        "name": "Texas Instruments",
+                        "uid": "40f985f368ed933e"
+                    },
+                    "mpn": "SN74S74N",
+                    "octopart_url": "https://octopart.com/sn74s74n-texas+instruments-9336958",
+                    "offers": [
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 747,
+                            "is_authorized": true,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-07T16:03:56Z",
+                            "moq": 1,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {
+                                "USD": [
+                                    [
+                                        1,
+                                        "0.64700"
+                                    ],
+                                    [
+                                        10,
+                                        "0.64700"
+                                    ],
+                                    [
+                                        100,
+                                        "0.64700"
+                                    ],
+                                    [
+                                        500,
+                                        "0.64700"
+                                    ],
+                                    [
+                                        1000,
+                                        "0.64700"
+                                    ],
+                                    [
+                                        2500,
+                                        "0.64700"
+                                    ],
+                                    [
+                                        5000,
+                                        "0.64700"
+                                    ],
+                                    [
+                                        10000,
+                                        "0.64700"
+                                    ]
+                                ]
+                            },
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0ed57b4&vpid=3121607",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://www.newark.com",
+                                "name": "Newark",
+                                "uid": "d294179ef2900153"
+                            },
+                            "sku": "67K1122"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": 6,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 261,
+                            "is_authorized": true,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-09T10:37:16Z",
+                            "moq": 1,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": 25,
+                            "packaging": null,
+                            "prices": {
+                                "USD": [
+                                    [
+                                        575,
+                                        "0.68440"
+                                    ],
+                                    [
+                                        1000,
+                                        "0.65240"
+                                    ]
+                                ]
+                            },
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0c91ad5&vpid=17602390",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://avnetexpress.avnet.com",
+                                "name": "Avnet Express",
+                                "uid": "c1e404eefe3c1223"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": 48,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 470,
+                            "is_authorized": true,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-09T13:43:30Z",
+                            "moq": 1,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": "Tube",
+                            "prices": {
+                                "USD": [
+                                    [
+                                        1,
+                                        "1.71000"
+                                    ],
+                                    [
+                                        25,
+                                        "1.37520"
+                                    ],
+                                    [
+                                        100,
+                                        "1.23750"
+                                    ],
+                                    [
+                                        250,
+                                        "1.10000"
+                                    ],
+                                    [
+                                        500,
+                                        "0.96250"
+                                    ],
+                                    [
+                                        750,
+                                        "0.86900"
+                                    ],
+                                    [
+                                        1000,
+                                        "0.79750"
+                                    ]
+                                ]
+                            },
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0647a93&vpid=1600464",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://www.digikey.com",
+                                "name": "Digi-Key",
+                                "uid": "2c3be9310496fffc"
+                            },
+                            "sku": "296-1734-5-ND"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 459,
+                            "is_authorized": true,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-08T21:22:30Z",
+                            "moq": 1,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": 1,
+                            "packaging": null,
+                            "prices": {
+                                "USD": [
+                                    [
+                                        1,
+                                        "0.94200"
+                                    ]
+                                ]
+                            },
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0b4bbc1&vpid=15359403",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://www.arrownac.com/",
+                                "name": "Arrow",
+                                "uid": "9d5b5851b06f4e9c"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 549,
+                            "is_authorized": true,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-09T10:15:11Z",
+                            "moq": null,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {
+                                "USD": [
+                                    [
+                                        1,
+                                        "1.71000"
+                                    ],
+                                    [
+                                        10,
+                                        "1.37000"
+                                    ],
+                                    [
+                                        100,
+                                        "1.10000"
+                                    ]
+                                ]
+                            },
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=012e8e4&vpid=37770315",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://www.mouser.com",
+                                "name": "Mouser",
+                                "uid": "a5e060ea85e77627"
+                            },
+                            "sku": "595-SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 400,
+                            "is_authorized": true,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-08T23:19:56Z",
+                            "moq": 100,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": 25,
+                            "packaging": null,
+                            "prices": {
+                                "EUR": [
+                                    [
+                                        100,
+                                        "0.91840"
+                                    ]
+                                ]
+                            },
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0c60841&vpid=61600010",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "EU",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://avnetexpress.avnet.com/store/em/EMController?storeId=500201&action=home&region=EMEA&catalogId=500201&langId=-1",
+                                "name": "Avnet Express Europe",
+                                "uid": "a7c762cdb2197400"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": 3,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 459,
+                            "is_authorized": true,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-09T12:13:08Z",
+                            "moq": 5,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {
+                                "USD": [
+                                    [
+                                        5,
+                                        "1.36000"
+                                    ],
+                                    [
+                                        25,
+                                        "1.30000"
+                                    ],
+                                    [
+                                        50,
+                                        "1.28000"
+                                    ],
+                                    [
+                                        100,
+                                        "0.93000"
+                                    ]
+                                ]
+                            },
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=065c7dc&vpid=56982514",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "JP",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://chip1stop.com/",
+                                "name": "Chip One Stop",
+                                "uid": "6ffbaaf17255bc3c"
+                            },
+                            "sku": "TI01-0129385"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 1985,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-09T16:55:03Z",
+                            "moq": null,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {
+                                "USD": [
+                                    [
+                                        1,
+                                        "1.40000"
+                                    ],
+                                    [
+                                        5,
+                                        "1.12000"
+                                    ],
+                                    [
+                                        19,
+                                        "0.70000"
+                                    ],
+                                    [
+                                        87,
+                                        "0.42000"
+                                    ],
+                                    [
+                                        477,
+                                        "0.36400"
+                                    ]
+                                ]
+                            },
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0e90df7&vpid=3584217",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://www.questcomp.com",
+                                "name": "Quest",
+                                "uid": "b29977939293615e"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 937,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-08T17:29:55Z",
+                            "moq": null,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {
+                                "USD": [
+                                    [
+                                        1,
+                                        "0.38000"
+                                    ]
+                                ]
+                            },
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0650ee1&vpid=44195630",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://rcfreelance.com/",
+                                "name": "Freelance Electronics",
+                                "uid": "029cc79618fcd15b"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 825,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2014-10-29T08:32:59Z",
+                            "moq": 1,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {
+                                "EUR": [
+                                    [
+                                        1,
+                                        "1.00000"
+                                    ],
+                                    [
+                                        25,
+                                        "0.80000"
+                                    ],
+                                    [
+                                        100,
+                                        "0.60000"
+                                    ]
+                                ],
+                                "USD": [
+                                    [
+                                        1,
+                                        "1.29130"
+                                    ],
+                                    [
+                                        25,
+                                        "1.03304"
+                                    ],
+                                    [
+                                        100,
+                                        "0.77478"
+                                    ]
+                                ]
+                            },
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=008a9c0&vpid=77783484",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "EU",
+                                "has_ecommerce": true,
+                                "homepage_url": null,
+                                "name": "Halfin",
+                                "uid": "7e26bb2c1225ade1"
+                            },
+                            "sku": "8250"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 438,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-08T17:40:35Z",
+                            "moq": null,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {
+                                "USD": [
+                                    [
+                                        61,
+                                        "0.80000"
+                                    ]
+                                ]
+                            },
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=06ab8f5&vpid=17557135",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://www.verical.com",
+                                "name": "Verical",
+                                "uid": "3c6cf966007befab"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 534,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-08T22:55:59Z",
+                            "moq": null,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {
+                                "USD": [
+                                    [
+                                        1,
+                                        "0.30000"
+                                    ]
+                                ]
+                            },
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0ced1b4&vpid=91003749",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://bristolelectronics.com",
+                                "name": "Bristol Electronics",
+                                "uid": "2d58e852264bfe9f"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 39,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-08T15:04:35Z",
+                            "moq": null,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {
+                                "USD": [
+                                    [
+                                        1,
+                                        "1.00000"
+                                    ],
+                                    [
+                                        25,
+                                        "0.79000"
+                                    ]
+                                ]
+                            },
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0bf793c&vpid=114646365",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://www.leadelectronics.com/",
+                                "name": "Lead Electronics",
+                                "uid": "647fa1751eb6b7b8"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": 21,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 0,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-09T06:18:03Z",
+                            "moq": 1,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": 1,
+                            "packaging": null,
+                            "prices": {
+                                "USD": [
+                                    [
+                                        1,
+                                        "1.33400"
+                                    ],
+                                    [
+                                        5,
+                                        "1.20000"
+                                    ],
+                                    [
+                                        25,
+                                        "1.06700"
+                                    ],
+                                    [
+                                        100,
+                                        "0.96700"
+                                    ],
+                                    [
+                                        500,
+                                        "0.90000"
+                                    ]
+                                ]
+                            },
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0a56800&vpid=176661568",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "PL",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://www.tme.eu/en/",
+                                "name": "TME",
+                                "uid": "223ee7340ea4f1f9"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 140,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-09T13:15:45Z",
+                            "moq": null,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {},
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=02c5c40&vpid=54816323",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://www.pricelynx.com",
+                                "name": "PriceLynx",
+                                "uid": "e8582d52fb533b9f"
+                            },
+                            "sku": "WI-791-4-36181"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 2,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-06T14:22:07Z",
+                            "moq": null,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {},
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0bac476&vpid=89262236",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": false,
+                                "homepage_url": "http://www.specialtypartsinc.com/",
+                                "name": "SPEC",
+                                "uid": "680dad070842bbca"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 40,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-09T14:35:57Z",
+                            "moq": null,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {},
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0c3ff5a&vpid=20768221",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": false,
+                                "homepage_url": "http://www.edxelectronics.com/",
+                                "name": "EDX",
+                                "uid": "ee682b62ce783daf"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 25,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-06T16:33:28Z",
+                            "moq": null,
+                            "octopart_rfq_url": "https://octopart.com/rfq/generate?ppid=9336958&vpid=66673663",
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {},
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0e42bef&vpid=66673663",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "GB",
+                                "has_ecommerce": false,
+                                "homepage_url": "http://www.cyclops-electronics.com",
+                                "name": "Cyclops Electronics",
+                                "uid": "6bd5aedf7d8db812"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 426,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-08T22:18:15Z",
+                            "moq": null,
+                            "octopart_rfq_url": "https://octopart.com/rfq/generate?ppid=9336958&vpid=52469734",
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {},
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0277e40&vpid=52469734",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": false,
+                                "homepage_url": "http://componentsense.com/",
+                                "name": "Component Sense 24",
+                                "uid": "ee8f2b85f4693d48"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 50,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-08T17:03:27Z",
+                            "moq": null,
+                            "octopart_rfq_url": "https://octopart.com/rfq/generate?ppid=9336958&vpid=46414645",
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {},
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=07fe135&vpid=46414645",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": false,
+                                "homepage_url": "http://www.4starelectronics.com/?utm_source=octopart&utm_medium=inventory&utm_campaign=Octopart",
+                                "name": "4 Star Electronics",
+                                "uid": "18c8ddc205e2cb0f"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 25,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-09T11:46:56Z",
+                            "moq": null,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {},
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0d7a7c1&vpid=12059439",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "GB",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://www.express-elect.com",
+                                "name": "Express Electronics",
+                                "uid": "0a94cf9e2a60d953"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": -2,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-07T10:34:11Z",
+                            "moq": null,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {},
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=037398d&vpid=113667580",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": false,
+                                "homepage_url": "http://www.chip-1.com/",
+                                "name": "Chip 1 Exchange",
+                                "uid": "9e705b7ae7fb4db7"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 1,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-09T13:46:30Z",
+                            "moq": null,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {},
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0a4937c&vpid=67189951",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": false,
+                                "homepage_url": "http://www.aedelectronics.com",
+                                "name": "AED Electronics",
+                                "uid": "f0283522f1e123ef"
+                            },
+                            "sku": "SN74S74N"
+                        }
+                    ],
+                    "uid": "843f4dbbd9275bf8",
+                    "uid_v2": 933695803142
+                },
+                {
+                    "__class__": "Part",
+                    "brand": {
+                        "__class__": "Brand",
+                        "homepage_url": null,
+                        "name": "AMD",
+                        "uid": "99135819b4724ed4"
+                    },
+                    "manufacturer": {
+                        "__class__": "Manufacturer",
+                        "homepage_url": null,
+                        "name": "AMD",
+                        "uid": "4de988e364889e2e"
+                    },
+                    "mpn": "SN74S74N",
+                    "octopart_url": "https://octopart.com/sn74s74n-amd-6967299",
+                    "offers": [],
+                    "uid": "8d9a44faf8ff525d",
+                    "uid_v2": 696729958155
+                },
+                {
+                    "__class__": "Part",
+                    "brand": {
+                        "__class__": "Brand",
+                        "homepage_url": null,
+                        "name": "Signetics",
+                        "uid": "0e4dcf47257ed98a"
+                    },
+                    "manufacturer": {
+                        "__class__": "Manufacturer",
+                        "homepage_url": null,
+                        "name": "Signetics",
+                        "uid": "46f983f369ca953e"
+                    },
+                    "mpn": "SN74S74N",
+                    "octopart_url": "https://octopart.com/sn74s74n-signetics-8097756",
+                    "offers": [
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 50,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-09T12:01:37Z",
+                            "moq": null,
+                            "octopart_rfq_url": "https://octopart.com/rfq/generate?ppid=8097756&vpid=175494288",
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {},
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=01d930d&vpid=175494288",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": true,
+                                "homepage_url": "http://www.voyagercomponents.com",
+                                "name": "Voyager Components",
+                                "uid": "8660436aa67e55a7"
+                            },
+                            "sku": "SN74S74N"
+                        },
+                        {
+                            "__class__": "PartOffer",
+                            "eligible_region": null,
+                            "factory_lead_days": null,
+                            "factory_order_multiple": null,
+                            "in_stock_quantity": 5,
+                            "is_authorized": false,
+                            "is_realtime": false,
+                            "last_updated": "2015-01-06T14:22:07Z",
+                            "moq": null,
+                            "octopart_rfq_url": null,
+                            "on_order_eta": null,
+                            "on_order_quantity": null,
+                            "order_multiple": null,
+                            "packaging": null,
+                            "prices": {},
+                            "product_url": "https://octopart.com/click/vptrack?country=US&ak=EXAMPLE_KEY&sig=0741a04&vpid=89259930",
+                            "seller": {
+                                "__class__": "Seller",
+                                "display_flag": "US",
+                                "has_ecommerce": false,
+                                "homepage_url": "http://www.specialtypartsinc.com/",
+                                "name": "SPEC",
+                                "uid": "680dad070842bbca"
+                            },
+                            "sku": "SN74S74N"
+                        }
+                    ],
+                    "uid": "9cf2558336484335",
+                    "uid_v2": 809775630225
+                }
+            ],
+            "reference": null
+        }
+    ]
