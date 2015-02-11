@@ -1,0 +1,30 @@
+# sites to crawl:
+# http://hackaday.com/
+# http://hackaday.io/
+# http://dangerousprototypes.com/
+# http://www.theledart.com/
+# http://www.instructables.com/
+# http://arduino.cc/
+# https://github.com/
+# http://people.ece.cornell.edu/land/courses/ece4760/
+# http://fabacademy.org/archive/
+# http://seeedstudio.com
+# http://www.weirdlab.fr/
+# http://fw.hardijzer.nl/
+
+# other sites of interest:
+
+# kickstarter projects:
+# https://www.kickstarter.com/projects/mossmann/hackrf-an-open-source-sdr-platform
+
+
+# partlists:
+# http://dangerousprototypes.com/docs/Bus_Pirate_v3.6
+# https://greatscottgadgets.com/tc13badge/tc13badge-kit-parts.pdf
+
+# BOM's
+# https://github.com/mossmann/hackrf/blob/master/doc/hardware/hackrf-one-bom.csv
+# https://docs.google.com/spreadsheets/d/11RTZvoxy8NDVNH0rqRNsO86LkCeCrhs6zsusw9pf6KE/edit#gid=46576701
+
+# KiCad .sch documents with BOM's
+# https://github.com/greatscottgadgets/ubertooth/blob/master/hardware/broccoli/broccoli.sch

@@ -1,28 +1,9 @@
+#
+# CSV parser for Seeed Studio Open Parts Library
+# http://www.seeedstudio.com/wiki/Open_parts_library
+#
+
 import csv
-
-
-def load_csv_fab(filepath):
-    return_list = []
-    discarded_list = []
-    with open(filepath, 'rb') as csvfile:
-        try:
-            dialect = csv.Sniffer().sniff(csvfile.read(1024))
-            # print 'dialect detected for ' + filepath
-            csvfile.seek(0)
-            reader = csv.reader(csvfile, dialect)
-        except:
-            # print 'dialect NOT detected for ' + filepath
-            csvfile.seek(0)
-            reader = csv.reader(csvfile)
-
-        for row in reader:
-            if row[1] != '':
-                return_list.append(row)
-            else:
-                discarded_list.append(row)
-
-    return return_list, discarded_list
-
 
 def load_csv_seed(filepath):
     return_list = []
@@ -37,12 +18,7 @@ def load_csv_seed(filepath):
 
     return return_list, discarded_list
 
-
-fab_list, fab_trash_list = load_csv_fab('fablab_electronics.csv')
-
-seed_list, seed_trash_list = load_csv_seed('seedStudio_list.csv')
-
-print seed_list
+seed_list, seed_trash_list = load_csv_seed('../datasets/seedStudio_list.csv')
 
 seed_parts = {
     'resistor': [],

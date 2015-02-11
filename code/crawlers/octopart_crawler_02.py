@@ -1,4 +1,4 @@
-x# sites to crawl:
+# sites to crawl:
 # http://hackaday.com/
 # http://dangerousprototypes.com/
 
