@@ -1,7 +1,7 @@
-to do today
+to do
 + get the CPL library from the web
 + parse the CPL library into dictionaries - extract part numbers
 - writing and reading json structures
 - compare CPL parts library agains Seeed Studio OPL
-- find a an electronics project to match against CPL
++ find a an electronics project to match against CPL > Arm Pro Mini
 - compare project agains CPL
