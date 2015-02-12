@@ -1,11 +1,11 @@
 #
-# Octopart CPL scraper. 
+# Octopart CPL scraper.
 # Intended to be used from command line with '>>' operator
 # for example: pytho octopart_cpl_scraper_01.py >> elements.txt
 #
 
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+# from selenium.webdriver.common.keys import Keys
 
 root_url = 'http://octopart.com'
 index_url = root_url + '/common-parts-library'
@@ -23,8 +23,4 @@ for i in elements:
 
     elements_text.append(e)
 
-
-
 driver.close
-
-
