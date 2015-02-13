@@ -9,7 +9,7 @@ to do
 		+ arduino bom
 		+ octopart CPL list
 		+ arm pro mini bom
-		- seeed studio list
+		+ seeed studio list
 
 
 	

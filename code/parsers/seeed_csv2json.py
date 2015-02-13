@@ -1,11 +1,11 @@
 import csv
 import cPickle as pickle
 
-# opening the file in the 'universal newline mode', hence the 'U' option
-octopartCPL_csv_bom = open('../../data/parts_lists/Common Parts Library BOM.csv', 'rU')
+
+seeedOPL_CSV_bom = open('../../data/parts_lists/OPL list20141222.csv', 'r')
 
 
-def csv2dict_cpl(input_csv_file):
+def csv2dict_seeed(input_csv_file):
     """ Convert csv file into dictionary"""
     dict_from_csv = []
     csv_reader = csv.DictReader(input_csv_file)
@@ -21,14 +21,14 @@ def csv2dict_cpl(input_csv_file):
         dict_from_csv.append(entry)
     return dict_from_csv
 
-cpl_bom = csv2dict_cpl(octopartCPL_csv_bom)
+seeedOPL_bom = csv2dict_seeed(seeedOPL_CSV_bom)
 
-with open ('../../data/parts_lists/cpl_bom.json', 'wb') as fp:
-    pickle.dump(cpl_bom, fp)
+with open('../../data/boms/seeedOPL_bom.json', 'wb') as fp:
+    pickle.dump(seeedOPL_bom, fp)
 
-with open ('../../data/parts_lists/cpl_bom.json', 'rb') as fp:
-    cpl_bom = pickle.load(fp)
+with open('../../data/boms/seeedOPL_bom.json', 'rb') as fp:
+    seeedOPL_bom = pickle.load(fp)
 
-for entry in cpl_bom:
+for entry in seeedOPL_bom:
     print '------------------------------------'
     print entry
