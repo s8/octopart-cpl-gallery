@@ -19,7 +19,7 @@
 
 
 # partlists:
-# http://dangerousprototypes.com/docs/Bus_Pirate_v3.6
+# http://dangerousprototypes.com/docs/Partlist
 # https://greatscottgadgets.com/tc13badge/tc13badge-kit-parts.pdf
 
 # BOM's

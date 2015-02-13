@@ -12,11 +12,13 @@ def scrub_bom(input_bom):
 def match_boms(bom_01, bom_02):
 	""" find matches between two boms """
 	matches = []
+	coverage = 0.0
 	for part_01 in bom_01:
 		for part_02 in bom_02:
 			if part_01['mpn'] == part_02['mpn']:
 				matches.append(part_01)
-	return matches
+	coverage = float(len(matches)) / len(bom_02)
+	return matches, coverage
 
 
 #  do the matching
@@ -42,15 +44,18 @@ if __name__ == '__main__':
 	arduino_bom = scrub_bom(arduino_bom)
 
 	# Match three boms against CPL
-	arm_matches = match_boms(cpl_bom, arm_bom)
-	seeed_matches = match_boms(cpl_bom, seeed_bom)
-	arduino_matches = match_boms(cpl_bom, arduino_bom)
+	arm_matches, arm_coverage = match_boms(cpl_bom, arm_bom)
+	seeed_matches, seeed_coverage = match_boms(cpl_bom, seeed_bom)
+	arduino_matches, arduino_coverage = match_boms(cpl_bom, arduino_bom)
 
+	print 'Arm Pro Mini: covered %.2f percent of parts' %(arm_coverage * 100)
 	print arm_matches
-	print '----------'
+	print '----------------------------------'
+	print 'Seeed Studio OPL: covered %.2f percent of parts' %(seeed_coverage * 100)
 	print seeed_matches
-	print '----------'
+	print '----------------------------------'
+	print 'Arduino: covered %.2f percent of parts' %(arduino_coverage * 100)
 	print arduino_matches
-	print '----------'
+	print '----------------------------------'
 
 
