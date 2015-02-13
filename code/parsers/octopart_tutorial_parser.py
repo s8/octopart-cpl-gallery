@@ -47,8 +47,7 @@ def match_bom(bom):
         # Record results for analysis
         results.extend(response['results'])
     return results
-
-
+ 
 def price_bom(bom):
     """ Analyze results sent back by Octopart API
         Price BOM """
@@ -56,7 +55,7 @@ def price_bom(bom):
     hits = 0
     total_avg_price = 0
     for result in bom:
-        line_item = line_items[result['reference']]
+        line_item = line_items[resultx['reference']]
         if len(result['items']) == 0:
             print "Did not find match on line item %s" % line_item
             continue

@@ -3,9 +3,16 @@ to do
 + parse the CPL library into dictionaries - extract part numbers
 + writing and reading json structures
 - design a data structure for the parts list
-	- research octopart API for data structure template
+	+ [{'mpn':'...', 'brand':'...']
+	+ research octopart API for data structure template
 	- parse all parts lists into the new json data structure
-	- [{'mpn':'...', 'brand':'...','reference':'...'}]
+		+ arduino bom
+		+ octopart CPL list
+		- arm pro mini bom
+		- seeed studio list
+
+
+	
 	
 - compare CPL parts library agains Seeed Studio OPL
 + find a an electronics project to match against CPL > Arm Pro Mini
