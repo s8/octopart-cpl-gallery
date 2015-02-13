@@ -8,7 +8,7 @@ to do
 	- parse all parts lists into the new json data structure
 		+ arduino bom
 		+ octopart CPL list
-		- arm pro mini bom
+		+ arm pro mini bom
 		- seeed studio list
 
 
