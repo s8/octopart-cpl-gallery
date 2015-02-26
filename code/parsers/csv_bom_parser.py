@@ -50,12 +50,12 @@ if __name__ == ('__main__'):
     octopart_cpl = load_json(octopartCPL_JSON_file)
 
     arm_pm_BOM_CSV_file = '../../data/boms/arm-pro-mini-bom.csv'
-    arm_pm_BOM_JSON_file = '../../data/boms/arm-pro-mini-bom.json'
+    arm_pm_BOM_JSON_file = '../../data/formatted_jsons/arm-pro-mini-bom.json'
     save_json(arm_pm_BOM_JSON_file, csv2dict(arm_pm_BOM_CSV_file))
     arm_pm_BOM = load_json(arm_pm_BOM_JSON_file)
 
     arduino_BOM_CSV_file = '../../data/boms/arduino_bom.csv'
-    arduino_BOM_JSON_file = '../../data/boms/arm-pro-mini-bom.json'
+    arduino_BOM_JSON_file = '../../data/formatted_jsons/arduino_bom.json'
     save_json(arduino_BOM_JSON_file, csv2dict(arduino_BOM_CSV_file))
     arduino_BOM = load_json(arduino_BOM_JSON_file)
 
