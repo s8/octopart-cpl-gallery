@@ -1,7 +1,3 @@
-// s8 (master #) Unit_01 $ curl -G https://octopart.com/api/v3/parts/match \
-// >    -d queries="[{\"mpn\":\"SN74S74N\"}]" \
-// >    -d apikey=EXAMPLE_KEY \
-// >    -d pretty_print=true
 {
     "__class__": "PartsMatchResponse",
     "msec": 66,
@@ -1002,3 +998,4 @@
             "reference": null
         }
     ]
+}
