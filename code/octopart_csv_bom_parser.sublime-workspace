@@ -1,0 +1,1138 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mas",
+				"master_id"
+			],
+			[
+				"trac",
+				"track_ids	param"
+			],
+			[
+				"play",
+				"playlist_split	statement"
+			],
+			[
+				"Re",
+				"reader	function"
+			],
+			[
+				"univer",
+				"universal_labels	statement"
+			],
+			[
+				"universal",
+				"universal_labels"
+			],
+			[
+				"big",
+				"big_four	statement"
+			],
+			[
+				"warner",
+				"warner_labels	statement"
+			],
+			[
+				"Uni",
+				"UnicodeEncodeError	class"
+			],
+			[
+				"warn",
+				"warner_labels	statement"
+			],
+			[
+				"sony",
+				"sony_labels	statement"
+			],
+			[
+				"label",
+				"label_release_counter	statement"
+			],
+			[
+				"label_release",
+				"label_release_counter	statement"
+			],
+			[
+				"top",
+				"top_label	statement"
+			],
+			[
+				"do_",
+				"do_artist	statement"
+			],
+			[
+				"echones",
+				"echonest_api_client	module"
+			],
+			[
+				"l",
+				"l_name"
+			],
+			[
+				"disco",
+				"discogs_api_client	module"
+			],
+			[
+				"SP",
+				"SP_USERNAME	statement"
+			],
+			[
+				"spoti",
+				"spotify_id"
+			],
+			[
+				"USER",
+				"SP_USERNAME"
+			],
+			[
+				"art",
+				"artist_name"
+			],
+			[
+				"disc",
+				"discogs_id	param"
+			],
+			[
+				"playl",
+				"playlists	statement"
+			],
+			[
+				"playlist",
+				"playlist_name	param"
+			],
+			[
+				"new",
+				"new_playlist	statement"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"do_get",
+				"do_get_masters	function"
+			],
+			[
+				"DISCOGS",
+				"DISCOGS"
+			],
+			[
+				"creat",
+				"user_playlist_create"
+			],
+			[
+				"list",
+				"lsit_of_playlists"
+			],
+			[
+				"playli",
+				"playlist_name"
+			],
+			[
+				"SPOTI",
+				"SPOTIPY_REDIRECT_URI	class"
+			],
+			[
+				"SPOT",
+				"SPOTIPY_CLIENT_SECRET"
+			],
+			[
+				"SPOTIFY_",
+				"SPOTIFY_CLIENT_SECRET	statement"
+			],
+			[
+				"print_",
+				"print_playlist_form_artist	function"
+			],
+			[
+				"Unic",
+				"UnicodeEncodeError	class"
+			],
+			[
+				"ECHO",
+				"ECHONEST_API_KEY	class"
+			],
+			[
+				"weezer",
+				"weezer_results	statement"
+			],
+			[
+				"Ec",
+				"ECHONEST_SHARED_SECRET"
+			],
+			[
+				"ECHONEST_",
+				"ECHONEST_SHARED_SECRET	statement"
+			],
+			[
+				"E",
+				"ECHONEST_CONSUMER_KEY	statement"
+			],
+			[
+				"labe",
+				"label_mates	statement"
+			],
+			[
+				"arti",
+				"artist_name"
+			],
+			[
+				"pare",
+				"parentLabel"
+			],
+			[
+				"conta",
+				"contactinfo"
+			],
+			[
+				"reque",
+				"request_releases	statement"
+			],
+			[
+				"lae",
+				"label_releases	statement"
+			],
+			[
+				"master_",
+				"masters_ids	statement"
+			],
+			[
+				"artis",
+				"artist_masters	statement"
+			],
+			[
+				"ar",
+				"artistJoins"
+			],
+			[
+				"l_",
+				"l_artist"
+			],
+			[
+				"mast",
+				"master_title	statement"
+			],
+			[
+				"DO_",
+				"DO_artist_releases	statement"
+			],
+			[
+				"DO_get",
+				"DO_get_releases_from_artist	function"
+			],
+			[
+				"DO_get_",
+				"DO_get_id_from_artist	function"
+			],
+			[
+				"DO",
+				"DO_artist_id	statement"
+			],
+			[
+				"spotify_c",
+				"spotify_client_secret	statement"
+			],
+			[
+				"area",
+				"areaLand"
+			],
+			[
+				"field",
+				"fieldtypes	statement"
+			],
+			[
+				"None",
+				"NoneType"
+			],
+			[
+				"cities",
+				"cities_dict	statement"
+			],
+			[
+				"citie",
+				"cities_dict	statement"
+			],
+			[
+				"citi",
+				"cities_dict	statement"
+			],
+			[
+				"ci",
+				"cities_dict	statement"
+			],
+			[
+				"artist",
+				"artist_masters	statement"
+			],
+			[
+				"refere",
+				"reference_part	forflow"
+			],
+			[
+				"tota",
+				"total_part_count	statement"
+			],
+			[
+				"current_",
+				"current_part	forflow"
+			],
+			[
+				"match",
+				"match_part_count	statement"
+			],
+			[
+				"curre",
+				"current_part	forflow"
+			],
+			[
+				"cu",
+				"current_part	forflow"
+			],
+			[
+				"input",
+				"input_csv_file	param"
+			],
+			[
+				"part",
+				"part_02	statement"
+			],
+			[
+				"quant",
+				"quantity_csv_field	statement"
+			],
+			[
+				"csv",
+				"csv2dict	function"
+			],
+			[
+				"req",
+				"request_secret	statement"
+			],
+			[
+				"do",
+				"do_secret	class"
+			],
+			[
+				"tot",
+				"total_names	statement"
+			],
+			[
+				"search",
+				"search_artists	function"
+			],
+			[
+				"get",
+				"musicbrainz_get_label_from_release"
+			],
+			[
+				"rele",
+				"release_id	param"
+			],
+			[
+				"music",
+				"musicbrazin_id_results	statement"
+			],
+			[
+				"query",
+				"query_type	statement"
+			],
+			[
+				"musicbrain",
+				"musicbrainz_query_by_id	function"
+			],
+			[
+				"musi",
+				"musicbrainz_results	statement"
+			],
+			[
+				"msuci",
+				"musicbrainz_results	statement"
+			],
+			[
+				"pro",
+				"productionYear	statement"
+			],
+			[
+				"row",
+				"row	forflow"
+			],
+			[
+				"OUTPUT",
+				"OUTPUT_GOOD	statement"
+			],
+			[
+				"wri",
+				"writelines	function"
+			],
+			[
+				"i",
+				"i	forflow"
+			],
+			[
+				"s",
+				"startswith"
+			],
+			[
+				"line",
+				"line	forflow"
+			],
+			[
+				"read",
+				"readline	function"
+			],
+			[
+				"find",
+				"find_all"
+			],
+			[
+				"data",
+				"dataTDRight"
+			],
+			[
+				"fin",
+				"find_all"
+			],
+			[
+				"Carrier",
+				"CarrierList"
+			],
+			[
+				"html",
+				"html	statement"
+			],
+			[
+				"write",
+				"writerow"
+			],
+			[
+				"column",
+				"column_data	statement"
+			],
+			[
+				"south",
+				"south_c	statement"
+			],
+			[
+				"north_c",
+				"north_c	statement"
+			],
+			[
+				"ener",
+				"energy_reader	statement"
+			],
+			[
+				"coas",
+				"coast_list	statement"
+			],
+			[
+				"min",
+				"min_coast_index	statement"
+			],
+			[
+				"max_co",
+				"max_coast_time	statement"
+			],
+			[
+				"cell",
+				"cell_value"
+			],
+			[
+				"max_coast",
+				"max_coast_value	statement"
+			],
+			[
+				"max",
+				"max_value	statement"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"octop",
+				"octopart_cpl	statement"
+			],
+			[
+				"see",
+				"seeed_opl	statement"
+			],
+			[
+				"cpl",
+				"octopart_cpl"
+			],
+			[
+				"arm",
+				"arm_pm_BOM	statement"
+			],
+			[
+				"K",
+				"KeyError	class"
+			],
+			[
+				"oct",
+				"octopart_cpl	statement"
+			],
+			[
+				"mpn",
+				"mpn_fields	statement"
+			],
+			[
+				"arm_pm_",
+				"arm_pm_BOM_JSON_file	statement"
+			],
+			[
+				"seee",
+				"seeedOPL_json_file	statement"
+			],
+			[
+				"inpu",
+				"input_csv_file	param"
+			],
+			[
+				"cs",
+				"csv_reader	statement"
+			],
+			[
+				"seeed",
+				"csv2dict_seeed"
+			],
+			[
+				"arm_",
+				"arm_coverage	statement"
+			],
+			[
+				"mat",
+				"matches	statement"
+			],
+			[
+				"math",
+				"match_boms	function"
+			],
+			[
+				"cpl_par",
+				"cpl_part_mpn	statement"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/python3.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/python3.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 227.0,
+		"last_filter": "scheme",
+		"selected_items":
+		[
+			[
+				"scheme",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"theme",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"sidebar",
+				"Side Bar: Refresh"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"INSTA",
+				"Package Control: Install Package"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"json",
+				"Pretty JSON: Minify (compress) JSON"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"lin",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"pep8",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"glue",
+				"Glue - Launch"
+			],
+			[
+				"enable",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"lint",
+				"SublimeLinter: Enable Debug Mode"
+			],
+			[
+				"dash",
+				"DashDoc: invoke Dash with selected word"
+			],
+			[
+				"prefer",
+				"Preferences: Settings - User"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"user ",
+				"Preferences: Settings - User"
+			],
+			[
+				":u",
+				"Permute Lines: Unique"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"markw",
+				"Set Syntax: Markdown"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"repl py",
+				"SublimeREPL: Python"
+			],
+			[
+				"color ",
+				"Colorsublime: Browse Themes"
+			],
+			[
+				"lintin",
+				"Anaconda: Disable linting on this file"
+			],
+			[
+				"new ht",
+				"New HTML5 Template"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"saveAs",
+				"Project: Save As"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"anaconda disa",
+				"Anaconda: Disable linting on this file"
+			],
+			[
+				"anaconda pep",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 249.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"sys.version",
+			"sys.ver",
+			"import sys",
+			"view.run_command('example')",
+			"view.run_command('example2123123')",
+			"view.run_command('example2')",
+			"view.run_command('example')",
+			"print ('############################################################')",
+			"print ('abc')",
+			"ptint 'abc'",
+			"2+2",
+			"abc",
+			"sys.version",
+			"import sys",
+			"sys.version",
+			"saveAs",
+			"save",
+			"save to",
+			"sys.version",
+			"import sys",
+			"sys.version",
+			"version",
+			"2+2",
+			"python",
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/data/big_four.csv",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/sample_discogs_queries/encoding glitches.txt",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/sample_discogs_queries/big_four_01.txt",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/drafts/long_playlist_exporter.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/spotify_api_client.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/discogs_api_client.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/label2playlist_02.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/music_apis_keys.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/echonest_pyen_test.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/echonest_api_client.py",
+		"/Users/s8/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/artist2label2playlist.sublime-project",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/spotify_test_01.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/pymongo_discogs.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/echonest_test.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/playlists_response.txt",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/discogs_mongodb_samples.txt",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/spotipy_test_01.py",
+		"/Users/s8/Documents/aPRJ/octopart/cpl_gallery/code/octopart_csv_bom_parser.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/command_line_interface_prototype.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/label2playlist.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_03/problem_set/audit.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/tutorials/pymongo_tutorial.py",
+		"/Users/s8/Documents/aPRJ/octopart/cpl_gallery/data/boms/csv/arm-pro-mini-bom.csv",
+		"/Users/s8/Documents/aPRJ/octopart/cpl_gallery/data/boms/csv/arduino_bom.csv",
+		"/Users/s8/Documents/aPRJ/octopart/cpl_gallery/data/boms/csv/Common Parts Library BOM.csv",
+		"/Users/s8/Documents/aPRJ/octopart/cpl_gallery/data/boms/csv/OPL list20141222.csv",
+		"/Users/s8/Documents/aPRJ/octopart/cpl_gallery/code/parsers/csv_bom_parser.py",
+		"/Users/s8/Documents/aPRJ/octopart/cpl_gallery/data/boms/csv/fablab_electronics.csv",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/pymongo_example.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/code/discogs_local_access.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/discogs_xml.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/discogs_client_test.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/music_apis_keys.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/musicbrainz.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_02/patent.data-4",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/discogs.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/ngs_testing.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/label2playlist.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/musicbrainz_request_onuka.json",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/label2playlist_plan",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/spotify_keys.py",
+		"/Users/s8/Documents/aPRJ/spotify_label2playlist/discogs_OAuth.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_03/cities.csv",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_03/validity.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_03/FIXME-autos.csv",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_03/autos.csv",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_03/autos-valid.csv",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_02/page_source.html",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_02/options.html",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_02/patent.data",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/excel2csv.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_03/audit.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_02/split_data.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_02/patent.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_02/process.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_02/carriers.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_02/html_soup.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_02/authors.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/Parsing_CSV_Files.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_02/data/FL-ATL.html",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_02/patent.data.xml",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_02/exampleResearchArticle.xml",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/popular-viewed-1.json",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/745090.csv",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/parsecsv.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/musicbrainz.py",
+		"/Users/s8/Documents/octopart/cpl_gallery/code/parsers/csv_bom_parser.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/nytimes.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/Reading_Excel_Files.py",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/2013_Max_Loads.csv",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/example.csv",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/Queen.json",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/first_aid_kit.json",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/Beatles.json",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/nirvana.json",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/lesson_01/One_Direction.json",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/udacity-mongoDB/release.json",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/udacity-mongoDB/artist.json",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/udacity-mongoDB/musicbrainz.py",
+		"/Users/s8/Documents/maidan/maidan monitor.txt",
+		"/Users/s8/Documents/maidan/movies/video_cue.txt",
+		"/Users/s8/Documents/maidan/sites_cue.txt",
+		"/Users/s8/Documents/supercollider/doodlegroove/dg_osc_gui.touchosc",
+		"/Users/s8/Documents/Classroom/udacity/mongoDB/data/beatles-diskography.csv",
+		"/Users/s8/Documents/maidan/scrapers-crawlers/webshots/webshots",
+		"/Users/s8/Documents/maidan/scrapers-crawlers/webkit2png/webkit2png",
+		"/Users/s8/Documents/maidan/scrapers-crawlers/maidan archive plan",
+		"/Users/s8/Documents/maidan/scrapers-crawlers/poi.txt",
+		"/Users/s8/Documents/maidan/ruso-tero/ruso_terro_2015_02_16.csv",
+		"/Users/s8/Documents/maidan/scrapers-crawlers/screenshot.py",
+		"/Users/s8/Documents/maidan/scrapers-crawlers/phantom-js-webkit2png.js",
+		"/Users/s8/Documents/maidan/scrapers-crawlers/webkit2png-fp.py",
+		"/Users/s8/Documents/maidan/todo.txt",
+		"/Users/s8/Documents/maidan/todo",
+		"/Users/s8/Documents/maidan/investigation/KDS capital investments",
+		"/Users/s8/Documents/octopart/cpl_gallery/code/scrapers/octopart_cpl_scraper_01.py",
+		"/Users/s8/Documents/octopart/cpl_gallery/data/boms/csv/OPL list20141222.csv",
+		"/Users/s8/Documents/octopart/cpl_gallery/data/boms/csv/Common Parts Library BOM.csv",
+		"/Users/s8/Documents/octopart/cpl_gallery/data/boms/csv/arduino_bom.csv",
+		"/Users/s8/Documents/octopart/cpl_gallery/data/boms/csv/arm-pro-mini-bom.csv",
+		"/Users/s8/Documents/octopart/cpl_gallery/data/boms/csv/arduino_bom_2.csv",
+		"/Users/s8/Library/Application Support/Sublime Text 3/Packages/PlainTasks/messages/Tutorial.todo",
+		"/Users/s8/Documents/octopart/cpl_gallery/code/matchers/cpl_bom_match.py",
+		"/Users/s8/Documents/octopart/cpl_gallery/code/matchers/bom_matching_test.py",
+		"/Users/s8/Documents/octopart/cpl_gallery/data/parts_lists/OPL list20141222.csv",
+		"/Users/s8/Documents/octopart/cpl_gallery/data/parts_lists/Common Parts Library BOM.csv",
+		"/Users/s8/Documents/octopart/cpl_gallery/data/boms/arduino_bom.csv",
+		"/Users/s8/Documents/octopart/cpl_gallery/data/boms/arm-pro-mini-bom.csv",
+		"/Users/s8/Documents/octopart/cpl_gallery/data/parts_lists/seedStudio_list.csv",
+		"/Users/s8/Documents/octopart/json_tutorials/bare_json.py",
+		"/Users/s8/Documents/octopart/cpl_gallery/code/parsers/bom_quote.py",
+		"/Users/s8/Documents/octopart/cpl_gallery/code/parsers/arduinoBom_csv2pickle.py",
+		"/Users/s8/Documents/octopart/cpl_gallery/code/parsers/armProMini_csv2pickle.py",
+		"/Users/s8/Documents/octopart/cpl_gallery/code/parsers/CPL_csv2pickle.py",
+		"/Users/s8/Documents/octopart/cpl_gallery/code/parsers/seeed_csv2pickle.py",
+		"/Users/s8/Library/Application Support/Sublime Text 3/Packages/User/python3.sublime-build",
+		"/Users/s8/Documents/octopart/cpl_gallery/data/octopart_api_query.json",
+		"/Users/s8/Documents/octopart/json_tutorials/bare_json.json",
+		"/Users/s8/Library/Application Support/Sublime Text 3/Packages/Colorsublime/Colorsublime.sublime-settings",
+		"/Users/s8/Library/Application Support/Sublime Text 3/Packages/User/Colorsublime.sublime-settings",
+		"/Users/s8/Documents/octopart/cpl_gallery/code/parsers/seeed_csv2json.py",
+		"/Users/s8/Documents/octopart/cpl_gallery/code/parsers/armProMini_csv2json.py",
+		"/Users/s8/Documents/octopart/cpl_gallery/code/parsers/arduinoBom_csv2json.py",
+		"/Users/s8/Documents/octopart/cpl_gallery/code/parsers/CPL_csv2json.py",
+		"/Users/s8/Documents/octopart/cpl_gallery/data/formatted_jsons/cpl_bom.json",
+		"/Users/s8/Documents/octopart/json_tutorials/intermediate_python_json.py",
+		"/Users/s8/Library/Application Support/Sublime Text 3/Packages/s8-test-plugin/sublime_plugin_test_01.py"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"label",
+			"geffen",
+			"verve",
+			"nashvi",
+			"capitol",
+			"geffen",
+			"***",
+			"sony",
+			"warner",
+			"sony",
+			"universal",
+			"sony",
+			"warner",
+			"do_art",
+			"do_top",
+			"artist_id",
+			"playlist_id",
+			"sample",
+			"status",
+			"master_id",
+			"midnight",
+			"spirit",
+			"flanger",
+			"{",
+			"55166700",
+			"continue",
+			"current",
+			"mongo_conn_kw",
+			"load_from_mongo",
+			"load_from",
+			"load_",
+			"mongo",
+			"pym",
+			"''",
+			"alias",
+			"alias-list",
+			"query_type",
+			"doctype",
+			"grant-v44-2013-05-16.dtd",
+			"doctype",
+			"ATL",
+			"tbody",
+			"international",
+			"\"FL\"",
+			"airport",
+			"datagrid",
+			"tdr",
+			"table",
+			"tdr",
+			"table",
+			"tdr",
+			"input",
+			"asset_id",
+			"standard thumb",
+			"views",
+			"begin-area",
+			"begin_area",
+			"—",
+			"hsm",
+			"603c",
+			"14n",
+			"500r",
+			"2RKF1002X",
+			"hirose",
+			"ZX62RD",
+			"APHHS1005CGCK",
+			"GRM1555C1H180FA01D",
+			"nrf51822",
+			"nrf",
+			"def",
+			"self",
+			"load_json",
+			"edit(edit)",
+			"),'utf-8'",
+			"byte",
+			"scrolldown",
+			"poll",
+			"sclang_thread",
+			"edit",
+			"poll",
+			"begin_",
+			"SETTINGS_FILE",
+			"print",
+			"AVE476M50X16T",
+			"str",
+			"ARRAY",
+			"array",
+			"txt",
+			"1206"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"-",
+			",'utf-8')"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.anaconda_documentation":
+	{
+		"height": 94.0
+	},
+	"output.exec":
+	{
+		"height": 284.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "octopart_csv_bom_parser.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 142.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
