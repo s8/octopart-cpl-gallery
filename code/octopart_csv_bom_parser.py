@@ -6,21 +6,34 @@
 # * make partially-matching components match: NRF51822-QFAA-T == nRF51822
 # * get rid of try-excepts
 # * add quantity field so that if there's 10x the same part - it should have higher coverage rating
-# make two lists - parts that match and parts that don't
+# * make two lists - parts that match and parts that don't
+# * refactor (if len(value) > 0 and len(key) > 0:) line
+# * refactor (if ('mpn' in entry.keys()):) line
+
 # parse 10 more boms
 # comment the code better
 # make a googledoc with the results
 
 import os
 import io
+import pprint
+import re
 import json
 import csv
-import pprint
+
+DATA_FOLDER = '../data/boms/'
+
+# CSV file paths
+SEEED_FILE = os.path.join(DATA_FOLDER, 'csv/OPL list20141222.csv')
+OCTOPART_FILE = os.path.join(DATA_FOLDER, 'csv/Common Parts Library BOM.csv')
+ARDUINO_FILE = os.path.join(DATA_FOLDER, 'csv/arduino_bom.csv')
+ARM_FILE = os.path.join(DATA_FOLDER, 'csv/arm-pro-mini-bom.csv')
 
 
 def clean_mpn(mpn):
+    ''' remove non-alphanumeric characters from MPN field '''
     garbage_chars = '~!@#$%^&*()_+-={}[]|:;"<>,./?\\\' '
-    # proper_chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
+
     for i in garbage_chars:
         if i in mpn:
             mpn = mpn.replace(i, '')
@@ -28,25 +41,15 @@ def clean_mpn(mpn):
 
 
 def csv2dict(input_csv_file):
-    """ read csv file from disk and parse it into a dictionary
-        data structure implemented here is a list of dictionaries
-        [
-            {'mpn':'...', 'brand':'...'},
-            {...},
-            {...},
-            ...
-        ]
-
-        refactor (if len(value) > 0 and len(key) > 0:) line
-        refactor (if ('mpn' in entry.keys()):) line
-
-        read the docs on DictReader
-    """
-    print ('parsing %s' % input_csv_file)
+    ''' read csv file from disk and parse it into an array of dictionaries
+        [{'mpn':'...', 'brand':'...', 'qty':'...'},{...},...,{...}]
+    '''
+    print ('parsing {}'.format(input_csv_file))
     # different strings for the same field in different csv boms
-    mpn_csv_fields = ['mpn', 'manufactuer part number', 'part number', 'part#']
-    brand_csv_fields = ['manufacturer', 'manufactuer name', 'manu']
-    quantity_csv_fields = ['qty', 'quantity']
+    MPN_FIELDS = ['mpn', 'manufactuer part number', 
+        'manufacturer part number', 'part number', 'part#', 'part #']
+    BRAND_FIELDS = ['manufacturer', 'manufactuer name', 'manu', 'man']
+    QTY_FIELDS = ['qty', 'quantity']
 
     with io.open(input_csv_file, 'r', encoding='utf-8') as f:
         dict_from_csv = []
@@ -54,173 +57,124 @@ def csv2dict(input_csv_file):
         for line_item in csv_reader:
             entry = {}
             for item in line_item:
-                key = str(item).strip()
-                value = str(line_item[item]).strip()
-                if len(value) > 0 and len(key) > 0:
-                    if key.lower() in mpn_csv_fields:
-                        # cleaning up special symbols
-                        entry['mpn'] = clean_mpn(value)
-                    if key.lower() in brand_csv_fields:
-                        entry['brand'] = value
-                    if key.lower() in quantity_csv_fields:
-                        entry['qty'] = value
+                key = item.strip().lower()
+                value = line_item[item].strip()
+                # sort the randomly-named csv entries into a neat dictionary
+                if value:
+                    if key in MPN_FIELDS: entry['mpn'] = clean_mpn(value)
+                    elif key in BRAND_FIELDS: entry['brand'] = value
+                    elif key in QTY_FIELDS: entry['qty'] = value
 
-            # make sure we don't add parts with empty MPN's
-            if ('mpn' in entry.keys()):
-                # if part was mentioned in the list, but no quantity specified
-                # we assume it is used once in the BOM
-                if ('qty' not in entry.keys()):
-                    entry['qty'] = 1
-                dict_from_csv.append(entry)
+            # if part was mentioned in the list, but no quantity specified
+            # we assume it is used once
+            if 'qty' not in entry.keys(): entry['qty'] = 1
 
+            # we only need parts with MPN explicitly stated
+            if 'mpn' in entry.keys(): dict_from_csv.append(entry)
+                
     return dict_from_csv
 
 
 def match_boms(reference_bom, target_bom):
-    """ 
+    '''
+    part coverage is calculated as:
+    total count of all matched parts / total count of parts in BOM
 
-    bom_01 and bom_02 are lists of dictionaries with [{'brand':'...', 'mpn':'...' }] format
-    find matches between two boms
-
-
-    part coverage is calculated as
-    (sum( part * qty )) / ()
-
+    over- and under-specified MPN's are matched
     match examples:
         c: 1n4148  r: 1n4148ws7f
         c: ft232rl  r: ft232rlreel
         c: mmbt3904  r: mmbt3904lt1g
         c: nrf51822  r: nrf51822qfaat
-    """
+    '''
 
-    matches = []
-    non_matches = []
-    match_part_count = 0
-    total_part_count = 0
-    coverage = 0.0
+    # matching results data structure
+    results = {
+        'matches':[],
+        'matches_count':0,
+        'non-matches':[],
+        'coverage':0,
+        'total_parts':0
+    }
 
     # iterate over the parts in the target BOM
     for target_part in target_bom:
         # make a total part count for the BOM
-        total_part_count += int(target_part['qty'])
+        results['total_parts'] += int(target_part['qty'])
+
         for reference_part in reference_bom:
 
-            c = target_part['mpn'].upper()
+            # store mpns in separate variables for concise comparison
+            t = target_part['mpn'].upper()
             r = reference_part['mpn'].upper()
 
             # check for over- and under-specified MPN's in both lists
-            if (c in r or r in c):
-                # if match found - put it to the matched list and increase
-                # match counter
-                matches.append(target_part)
-                match_part_count += int(target_part['qty'])
+            if (t in r or r in t):
+                # if match found - put it to the matched list 
+                results['matches'].append(target_part)
             else:
                 # if no match found - put it to the non-match list
-                if target_part not in non_matches:
-                    non_matches.append(target_part)
+                if target_part not in results['non-matches']:
+                    results['non-matches'].append(target_part)
 
     # calculate coverage from total part count in the BOM
-    coverage = float(match_part_count / total_part_count)
 
-    return matches, non_matches, coverage, total_part_count
+    parts_covered = sum([int(i['qty']) for i in results['matches']])
+    results['coverage'] =  parts_covered / results['total_parts']
+
+    return results
+
+def print_results(name, matches):
+    ''' print detailed results of matching procedure '''
+
+    pp = pprint.PrettyPrinter(indent=4)
+
+    print ('{}: covered {:.2f} percent from the total of {} parts'
+        .format(
+            name,
+            matches['coverage'] * 100, 
+            str(matches['total_parts'])
+           )
+        )
+    print ('>>>> matched parts >>>>')
+    pp.pprint(matches['matches'])
+    print ('>>>> not matched parts >>>>')
+    pp.pprint(matches['non-matches'])
+    print ('----------------------------------')
 
 
 if __name__ == ('__main__'):
 
-    pp = pprint.PrettyPrinter(indent=4)
-    """ open csv file, parse it into a dict and save as a json """
+    # read files into dictionaries
+    seeed_opl = csv2dict(SEEED_FILE)
+    octopart_cpl = csv2dict(OCTOPART_FILE)
 
-    data_folder = '../data/boms/'
+    arm_BOM = csv2dict(ARM_FILE)
+    arduino_BOM = csv2dict(ARDUINO_FILE)
 
-    seeedOPL_CSV_file = os.path.join(data_folder, 'csv/OPL list20141222.csv')
-    seeed_opl = csv2dict(seeedOPL_CSV_file)
+    arm_IN_cpl = match_boms(octopart_cpl, arm_BOM)
+    seeed_IN_cpl = match_boms(octopart_cpl, seeed_opl)
+    arduino_IN_cpl = match_boms(octopart_cpl, arduino_BOM)
 
-    octopartCPL_CSV_file = os.path.join(
-        data_folder, 'csv/Common Parts Library BOM.csv')
-    octopart_cpl = csv2dict(octopartCPL_CSV_file)
-
-    arm_BOM_CSV_file = os.path.join(data_folder, 'csv/arm-pro-mini-bom.csv')
-    arm_BOM = csv2dict(arm_BOM_CSV_file)
-
-    arduino_BOM_CSV_file = data_folder + 'csv/arduino_bom.csv'
-    arduino_BOM = csv2dict(arduino_BOM_CSV_file)
-
-    # print ("================================================================")
-    # print ('octopart: ' + str(len(octopart_cpl)) + ' elements')
-    # print ("----------------------------------------------------------------")
-    # print (octopart_cpl)
-
-    # print ("================================================================")
-    # print ('seeed: ' + str(len(seeed_opl)) + ' elements')
-    # print ("----------------------------------------------------------------")
-    # print (seeed_opl)
-
-    # print ("================================================================")
-    # print ('arm: ' + str(len(arm_BOM)) + ' elements')
-    # print ("----------------------------------------------------------------")
-    # print (arm_BOM)
-
-    # print ("================================================================")
-    # print ('arduino: ' + str(len(arduino_BOM)) + ' elements')
-    # print ("----------------------------------------------------------------")
-    # print (arduino_BOM)
-
-    # Match three boms against CPL
-    arm_cpl_matches, arm_cpl_non_matches, arm_cpl_coverage, arm_total_parts = \
-        match_boms(octopart_cpl, arm_BOM)
-    seeed_cpl_matches, seeed_cpl_non_mathces, seeed_cpl_coverage, seeed_total_parts = \
-        match_boms(octopart_cpl, seeed_opl)
-    arduino_cpl_matches, arduino_cpl_non_matches, arduino_cpl_coverage, arduino_total_parts = \
-        match_boms(octopart_cpl, arduino_BOM)
-
-    arm_opl_matches, arm_opl_non_matches, arm_opl_coverage, arm_total_parts = \
-        match_boms(seeed_opl, arm_BOM)
-    octopart_opl_matches, octopart_opl_non_matches, octopart_opl_coverage, octopart_total_parts = \
-        match_boms(seeed_opl, octopart_cpl)
-    arduino_opl_matches, arduino_opl_non_matches, arduino_opl_coverage, arduino_total_parts = \
-        match_boms(seeed_opl, arduino_BOM)
+    arm_IN_opl = match_boms(seeed_opl, arm_BOM)
+    cpl_IN_opl = match_boms(seeed_opl, octopart_cpl)
+    arduino_IN_opl = match_boms(seeed_opl, arduino_BOM)
 
     print ("================================================================")
     print ("================  OCTOPART CPL MATCHES  ========================")
     print ("================================================================")
+    print ()
 
-    print ('ArmProMini: covered {:.2f} percent of total {} parts'.format(
-           (arm_cpl_coverage * 100), str(arm_total_parts)))
-
-    print ([i['mpn'] + ' : ' + i['brand'] + ' : x' + str(i['qty'])
-            for i in arm_cpl_matches])
-    # pp.pprint(arduino_cpl_non_matches)
-    print ('----------------------------------')
-
-
-    print ('Arduino: covered {:.2f} percent of total {} parts'.format(
-           (arduino_cpl_coverage * 100), str(arduino_total_parts)))
-    print ([i['mpn'] + ' : ' + i['brand'] + ' : x' + str(i['qty'])
-            for i in arduino_cpl_matches])
-    print ('----------------------------------')
-
-    
-    # print ('Seeed OPL: covered {:.2f} percent of total {} parts'.format(
-    #        (seeed_cpl_coverage * 100), str(seeed_total_parts)))
-    # print([i['mpn'] + ' : ' + i['brand'] + ' : x' + str(i['qty'])
-    #        for i in seeed_cpl_matches])
-    # print ('----------------------------------')
+    print_results('ArmProMini in CPL', arm_IN_cpl)
+    print_results('Arduino in CPL', arduino_IN_cpl)
+    print_results('Seeed OPL in CPL', seeed_IN_cpl)
 
     print ("================================================================")
     print ("=================    SEEED OPL MATCHES    ======================")
     print ("================================================================")
-    print ('ArmProMini: covered {:.2f} percent of total {} parts'.format(
-           (arm_opl_coverage * 100), str(arm_total_parts)))
-    print([i['mpn'] + ' : ' + i['brand'] + ' : x' + str(i['qty']) for i in arm_opl_matches
-           if 'brand' and 'mpn' in i])
-    print ('----------------------------------')
-    print ('Arduino: covered {:.2f} percent of total {} parts'.format(
-           (arduino_opl_coverage * 100), str(arduino_total_parts)))
-    print([i['mpn'] + ' : ' + i['brand'] + ' : x' + str(i['qty']) for i in arduino_opl_matches
-           if 'brand' and 'mpn' in i])
-    print ('----------------------------------')
-    # print ('Octopart CPL: covered {:.2f} percent of total {} parts'.format(
-    #        (octopart_opl_coverage * 100), str(octopart_total_parts)))
-    # print([i['mpn'] + ' : ' + i['brand'] + ' : x' + str(i['qty']) for i in octopart_opl_matches
-    #        if 'brand' and 'mpn' in i])
-    # print ('----------------------------------')
+    print ()
+
+    print_results('ArmProMini in OPL', arm_IN_opl)
+    print_results('Arduino in OPL', arduino_IN_opl)
+    print_results('Octopart CPL in OPL', cpl_IN_opl)
+ 
